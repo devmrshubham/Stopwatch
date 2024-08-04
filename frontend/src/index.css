@@ -1,0 +1,87 @@
+* {
+  margin: 0px;
+  padding: 0%;
+  box-sizing: border-box;
+  /* font-family: "Poppins", sans-serif; */
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Playfair:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+/* navbar css */
+
+.navbar {
+  font-family: "Poppins", serif;
+  font-size: 1.0625rem;
+  line-height: 1.625rem;
+  text-transform: uppercase;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.active {
+  border-bottom: 2px solid black;
+}
+.navbar-brand {
+  font-weight: bold;
+  font-family: "roboto", sans-serif;
+  letter-spacing: 3px;
+}
+
+.links {
+  text-decoration: none;
+  display: inline-flex;
+  flex-direction: row;
+  gap: 0px 1.25rem;
+}
+
+.links a {
+  text-decoration: none;
+  color: white;
+  transition: all 500ms;
+  margin-bottom: 0.625rem;
+  padding-bottom: 0.3125rem;
+}
+
+.links a:hover {
+  border-bottom: 2px solid white;
+}
+
+/* ================= */
+/* Register Page */
+
+.register {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0%;
+  margin: 0px;
+}
+
+.box {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.517);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box div {
+  height: 15.75rem;
+  width: 15.75rem;
+  border: 5px solid white;
+  border-radius: 50%;
+  border-left-color: transparent;
+  animation: circle 1s infinite ;
+}
+
+@keyframes circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
